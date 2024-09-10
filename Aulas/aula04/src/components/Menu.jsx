@@ -5,8 +5,8 @@ function Menu(params) {
   return (
     <nav>
       <ul>
-        {opcoes.map((opcoes) => (
-          <li>
+        {opcoes.map((opcoes, index) => (
+          <li key={index}>
             <Link texto={opcoes} />
           </li>
         ))}
